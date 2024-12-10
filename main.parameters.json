@@ -21,7 +21,7 @@
             "value": "latest"
         },
         "keyVaultName": {
-            "value": "LeonardosKeyVault"
+            "value": "leonardo-kv-2024"
         }
     }
   }
