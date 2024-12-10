@@ -11,4 +11,5 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2022-09-01' = {
     reserved: true
   }
 }
+
 output planId string = appServicePlan.id
