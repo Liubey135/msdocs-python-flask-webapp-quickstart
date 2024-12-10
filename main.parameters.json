@@ -20,7 +20,7 @@
         "containerRegistryImageVersion": {
             "value": "latest"
         },
-        "KeyVaultName": {
+        "keyVaultName": {
             "value": "LeonardosKeyVault"
         }
     }
