@@ -13,13 +13,13 @@ resource containerRegistry 'Microsoft.ContainerRegistry/registries@2023-07-01' e
 module keyVault './modules/key-vault.bicep' = {
   name: 'keyVaultDeploy'
   params: {
-    name: 'leonardo-kv-2024'
+    name: keyVaultName
     location: location
   }
 }
 
 resource keyVaultReference 'Microsoft.KeyVault/vaults@2022-07-01' existing = {
-  name: 'leonardo-kv-2024'
+  name: keyVaultName
 }
 
 module acr './modules/acr.bicep' = {
