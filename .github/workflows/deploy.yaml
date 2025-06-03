@@ -8,8 +8,6 @@ env:
   KEY_VAULT_NAME: "bcsai2024leo-kv"
   REGISTRY_LOGIN_SERVER: "bcsai2024leoacr.azurecr.io"
   WEB_APP_NAME: "bcsai2024-leo-app"
-  REGISTRY_USERNAME: "leoacrusername"
-  REGISTRY_PASSWORD: "leoacrpassword"
   DOCKER_REGISTRY_SERVER_URL: "bcsai2024leoacr.azurecr.io"
 
 jobs:
