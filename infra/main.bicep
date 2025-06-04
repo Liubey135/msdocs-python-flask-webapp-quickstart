@@ -22,6 +22,10 @@ param resourceGroupName string = ''
 param appServiceName string = ''
 param appServicePlanName string = ''
 
+@minLength(1)
+@description('App Service Plan SKU (e.g., B1, B1ms)')
+param skuName string = 'B1'
+
 var abbrs = loadJsonContent('./abbreviations.json')
 
 // tags that should be applied to all resources.
@@ -74,7 +78,7 @@ module appServicePlan './core/host/appserviceplan.bicep' = {
     location: location
     tags: tags
     sku: {
-      name: 'B1'
+      name: skuName
     }
   }
 }
